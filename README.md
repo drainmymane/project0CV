@@ -1,1 +1,1 @@
-https://drainmymane.github.io/project0CV/cv
+[My CV](https://drainmymane.github.io/project0CV/cv)
