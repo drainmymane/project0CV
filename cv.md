@@ -2,9 +2,11 @@
 # +30947590285
 # Sigma
 # Perks
+
 - [ ] feelings
 - [x] rape
-# Примеры кода___
+
+# Примеры кода
 
 ```
 print("Hello, World!!!")
