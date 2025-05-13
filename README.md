@@ -3,7 +3,7 @@
 # Sigma
 # Perks
 - [ ] feelings
-- [ x ] rape
+- [x] rape
 # Примеры кода___
 ```
 print("Hello, World!!!")
