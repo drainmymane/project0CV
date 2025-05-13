@@ -2,7 +2,7 @@
 # +30947590285
 # Sigma
 # Perks
-- [] feelings
+- [ ] feelings
 - [ x ] rape
 # Примеры кода___
 ```
