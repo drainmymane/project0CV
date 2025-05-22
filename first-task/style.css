@@ -42,22 +42,22 @@ footer{
     align-items: center;
     padding: 10px;
     background-color:#6b3c21;
-    color: #9a9eaf;
-
 }
 
 .nav{
     display: flex;
     justify-content: flex-end;
+    align-items: center;
     margin: 10px;
+    color:#d7d0bf;
 }
 
-.nav a{
+.nav-link{
     padding: 5px;
     margin: 5px;
+    color:#d7d0bf;
 
     text-decoration: none;
-    color:#d7d0bf;
     font-weight: 300;
 }
 
@@ -70,6 +70,15 @@ footer{
     border-radius: 50%;
     box-shadow: 1px 1px 1px #6b3c21;
     transition: .3s;
+}
+
+.cat{
+    border-radius: 10%;
+    width: 70px;
+    height: 70px;
+    margin: 5px;
+    background-image: url("/cat.jpg");
+    background-size: cover;
 }
 
 .profile-logo:hover{
@@ -102,13 +111,34 @@ div.profile-title *{
     margin-left: 15%;
     padding-bottom: 50px;
     width: 70%;
-    border-bottom: 2px solid #9a9eaf;
+    border-bottom: 10px solid #9a9eaf;
+
+}
+
+.main-section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0% 7%;
+    font-weight: 400;
+
 }
 
 .section-container{
     width: 40%;
+    margin: 5px;
+    border: 1px solid #000000;
 }
 
 .section-container h2{
-    color: #6b3c21;
+    letter-spacing: 10px;
+    color: #c77e3a;
+    text-transform: uppercase;
 }
+
+.contacts-item::before{
+    content: "";
+}
+
+
