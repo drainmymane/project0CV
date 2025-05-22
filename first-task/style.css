@@ -11,6 +11,7 @@ Sisal
 
 *{
     font-family: "Playfair Display", serif;
+    font-size: 24px;
 }
 
 .container{
@@ -36,7 +37,13 @@ main{
 }
 
 footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
     background-color:#6b3c21;
+    color: #9a9eaf;
+
 }
 
 .nav{
@@ -52,7 +59,6 @@ footer{
     text-decoration: none;
     color:#d7d0bf;
     font-weight: 300;
-    font-size: 24px;
 }
 
 .profile-logo{
@@ -93,7 +99,16 @@ div.profile-title *{
     justify-content: space-around;
     align-items: center;
     margin: 50px 0px;
-    padding-left: 15%;
+    margin-left: 15%;
+    padding-bottom: 50px;
     width: 70%;
+    border-bottom: 2px solid #9a9eaf;
+}
 
+.section-container{
+    width: 40%;
+}
+
+.section-container h2{
+    color: #6b3c21;
 }
