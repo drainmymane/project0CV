@@ -1,4 +1,99 @@
+/*Pickled Bean
+#6b3c21
+Santas Gray
+#9a9eaf
+Copper
+#c77e3a
+Sisal
+#d7d0bf*/
+
 @import url(https://fonts.googleapis.com/css?family=Open+Sans|Playfair+Display:400,700,400italic,700italic&subset=latin,cyrillic);
+
 *{
     font-family: "Playfair Display", serif;
+}
+
+.container{
+    min-height: 50px;
+}
+
+body{
+    box-sizing: content-box;
+    display: flex;
+    flex-direction: column;
+    
+    width: 100%;
+    margin: 0px;
+
+}
+
+header{
+    background-color:#c77e3a;
+}
+
+main{
+    background-color: #d7d0bf;
+}
+
+footer{
+    background-color:#6b3c21;
+}
+
+.nav{
+    display: flex;
+    justify-content: flex-end;
+    margin: 10px;
+}
+
+.nav a{
+    padding: 5px;
+    margin: 5px;
+
+    text-decoration: none;
+    color:#d7d0bf;
+    font-weight: 300;
+    font-size: 24px;
+}
+
+.profile-logo{
+    width: 200px;
+    height: 200px;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+    box-shadow: 1px 1px 1px #6b3c21;
+    transition: .3s;
+}
+
+.profile-logo:hover{
+    box-shadow: 2px 4px 3px #6b3c21;
+    scale: 1.01;
+}
+
+.profile-title{
+    display: flex;
+    flex-direction: column;
+}
+
+.profile-title h1{
+    border-bottom: 3px solid #000000 ;
+}
+
+div.profile-title *{
+    padding: 5px;
+    margin: 0px;
+    letter-spacing: 0.2rem;
+    text-align: center;
+    font-weight: 500;
+}
+
+#profile{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 50px 0px;
+    padding-left: 15%;
+    width: 70%;
+
 }
