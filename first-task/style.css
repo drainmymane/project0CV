@@ -149,16 +149,16 @@ div.profile-title *{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    align-items: center;
+    align-items: start;
     padding: 0% 5%;
     font-weight: 400;
 
 }
 
 .section-container{
-    min-width: 40%;
-    margin: 5px;
-    border: 1px solid #000000;
+    width: 42%;
+    margin: 10px 5px;
+    border-bottom: #9a9eaf solid 1px;
 }
 
 .section-container h2{
@@ -167,8 +167,15 @@ div.profile-title *{
     text-transform: uppercase;
 }
 
+.section-container :not(h2){
+    font-family: 'Times New Roman', Times, serif;
+}
+
 .contacts-item::before{
     content: "";
 }
 
-
+#education,
+#english{
+    border-bottom: 0;
+}
