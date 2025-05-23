@@ -14,6 +14,10 @@ Sisal
     font-size: 24px;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .container{
     min-height: 50px;
 }
@@ -48,17 +52,43 @@ footer{
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    margin: 10px;
     color:#d7d0bf;
 }
 
 .nav-link{
-    padding: 5px;
-    margin: 5px;
+    position: relative;
+    padding: 5px 15px;
+    margin: 15px 5px;
     color:#d7d0bf;
-
+    font-weight: 500;
     text-decoration: none;
-    font-weight: 300;
+}
+
+a.nav-link::after {
+  content: "";
+  position: absolute;
+  left: 12px;
+  bottom: 0px;
+  height: 2px;
+  background-color: #d7d0bf;
+  opacity: 0;
+  transition: .5s;
+}
+
+.nav-link:hover::after {
+  opacity: 1;
+  animation-name: slidein;
+  animation-duration: 0.8s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes slidein {
+  from {
+    width: 0;
+  }
+  to {
+    width: calc(100% - 24px);
+  }
 }
 
 .profile-logo{
@@ -77,7 +107,7 @@ footer{
     width: 70px;
     height: 70px;
     margin: 5px;
-    background-image: url("/cat.jpg");
+    background-image: url("/assets/cat.jpg");
     background-size: cover;
 }
 
@@ -120,13 +150,13 @@ div.profile-title *{
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
-    padding: 0% 7%;
+    padding: 0% 5%;
     font-weight: 400;
 
 }
 
 .section-container{
-    width: 40%;
+    min-width: 40%;
     margin: 5px;
     border: 1px solid #000000;
 }
