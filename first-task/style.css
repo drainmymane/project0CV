@@ -1,0 +1,181 @@
+/*Pickled Bean
+#6b3c21
+Santas Gray
+#9a9eaf
+Copper
+#c77e3a
+Sisal
+#d7d0bf*/
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans|Playfair+Display:400,700,400italic,700italic&subset=latin,cyrillic);
+
+*{
+    font-family: "Playfair Display", serif;
+    font-size: 24px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.container{
+    min-height: 50px;
+}
+
+body{
+    box-sizing: content-box;
+    display: flex;
+    flex-direction: column;
+    
+    width: 100%;
+    margin: 0px;
+
+}
+
+header{
+    background-color:#c77e3a;
+}
+
+main{
+    background-color: #d7d0bf;
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color:#6b3c21;
+}
+
+.nav{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    color:#d7d0bf;
+}
+
+.nav-link{
+    position: relative;
+    padding: 5px 15px;
+    margin: 15px 5px;
+    color:#d7d0bf;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+a.nav-link::after {
+  content: "";
+  position: absolute;
+  left: 12px;
+  bottom: 0px;
+  height: 2px;
+  background-color: #d7d0bf;
+  opacity: 0;
+  transition: .5s;
+}
+
+.nav-link:hover::after {
+  opacity: 1;
+  animation-name: slidein;
+  animation-duration: 0.8s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes slidein {
+  from {
+    width: 0;
+  }
+  to {
+    width: calc(100% - 24px);
+  }
+}
+
+.profile-logo{
+    width: 200px;
+    height: 200px;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+    box-shadow: 1px 1px 1px #6b3c21;
+    transition: .3s;
+}
+
+.cat{
+    border-radius: 10%;
+    width: 70px;
+    height: 70px;
+    margin: 5px;
+    background-image: url("/assets/cat.jpg");
+    background-size: cover;
+}
+
+.profile-logo:hover{
+    box-shadow: 2px 4px 3px #6b3c21;
+    scale: 1.01;
+}
+
+.profile-title{
+    display: flex;
+    flex-direction: column;
+}
+
+.profile-title h1{
+    border-bottom: 3px solid #000000 ;
+}
+
+div.profile-title *{
+    padding: 5px;
+    margin: 0px;
+    letter-spacing: 0.2rem;
+    text-align: center;
+    font-weight: 500;
+}
+
+#profile{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 50px 0px;
+    margin-left: 15%;
+    padding-bottom: 50px;
+    width: 70%;
+    border-bottom: 10px solid #9a9eaf;
+
+}
+
+.main-section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: start;
+    padding: 0% 5%;
+    font-weight: 400;
+
+}
+
+.section-container{
+    width: 42%;
+    margin: 10px 5px;
+    border-bottom: #9a9eaf solid 1px;
+}
+
+.section-container h2{
+    letter-spacing: 10px;
+    color: #c77e3a;
+    text-transform: uppercase;
+}
+
+.section-container :not(h2){
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.contacts-item::before{
+    content: "";
+}
+
+#education,
+#english{
+    border-bottom: 0;
+}

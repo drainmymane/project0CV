@@ -12,7 +12,9 @@
 # Примеры кода__
 
 ```
-print("Hello, World!!!")
+function multiply(a, b){
+  return a*b
+}
 ```
 
 # Опыт работы:
