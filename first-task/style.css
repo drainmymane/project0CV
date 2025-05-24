@@ -193,25 +193,26 @@ div.profile-title *{
     width: 24px;
     height: 24px;
     background-size: contain;
+    background-image: url("/assets/award.svg");
 }
 /**town**/
-.contacts-item:nth-child(1){
+.contacts-list :nth-child(1)::before{
     background-image: url("/assets/town.svg");
 }
 /**email**/
-.contacts-item:nth-child(2){
+.contacts-list :nth-child(2)::before{
     background-image: url("/assets/mail.svg");
 }
 /**Github**/
-.contacts-item:nth-child(3){
+.contacts-list :nth-child(3)::before{
     background-image: url("/assets/github.svg");
 }
 /**Telegram**/
-.contacts-item:nth-child(4){
+.contacts-list :nth-child(4)::before{
     background-image: url("/assets/telegram.svg");
 }
 /**Discord**/
-.contacts-item:nth-child(5){
+.contacts-list :nth-child(5)::before{
     background-image: url("/assets/discord-logo.svg");
 }
 
