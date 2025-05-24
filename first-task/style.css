@@ -148,8 +148,7 @@ div.profile-title *{
 .main-section{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: start;
+    justify-content: space-around;  
     padding: 0% 5%;
     font-weight: 400;
 
@@ -178,4 +177,12 @@ div.profile-title *{
 #education,
 #english{
     border-bottom: 0;
+}
+
+@media (max-width: 850px) {
+
+}
+
+@media (max-width: 750px) {
+
 }
