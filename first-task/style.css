@@ -26,8 +26,6 @@ body{
     box-sizing: content-box;
     display: flex;
     flex-direction: column;
-    
-    width: 100%;
     margin: 0px;
 
 }
@@ -38,6 +36,7 @@ header{
 
 main{
     background-color: #d7d0bf;
+    padding: 0% 5%;
 }
 
 footer{
@@ -45,6 +44,7 @@ footer{
     justify-content: space-between;
     align-items: center;
     padding: 10px;
+    color: #d7d0bf;
     background-color:#6b3c21;
 }
 
@@ -91,11 +91,19 @@ a.nav-link::after {
   }
 }
 
+.list-toggle{
+    display: flex;
+    flex-direction:column;
+}
+
+.collapsed{
+
+}
+
 .profile-logo{
     width: 200px;
     height: 200px;
     object-fit: cover;
-
     border-radius: 50%;
     box-shadow: 1px 1px 1px #6b3c21;
     transition: .3s;
@@ -137,10 +145,10 @@ div.profile-title *{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin: 50px 0px;
-    margin-left: 15%;
+    align-self: center;
+    margin-top: 50px;
     padding-bottom: 50px;
-    width: 70%;
+    width: 100%;
     border-bottom: 10px solid #9a9eaf;
 
 }
@@ -149,14 +157,13 @@ div.profile-title *{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;  
-    padding: 0% 5%;
     font-weight: 400;
 
 }
 
 .section-container{
-    width: 42%;
-    margin: 10px 5px;
+    margin: 10px 5%;
+    width: calc(40% - 30px);
     border-bottom: #9a9eaf solid 1px;
 }
 
@@ -179,17 +186,27 @@ div.profile-title *{
     border-bottom: 0;
 }
 
-@media (max-width: 814px) {
+@media (max-width: 880px) {
+    main{
+        padding: 0% 20px;
+    }
     #profile{
-        flex-wrap: wrap;
+        flex-direction: column;
         padding: 2px;
+       
         margin-bottom: 10px;
+        padding-bottom: 15px;
+    }
+    #education{
+        border-bottom: #9a9eaf solid 1px;
     }
     .main-section{
         padding-top: 0px;
     }
 }
 
-@media (max-width: 710px) {
-    
+@media (max-width: 760px) {
+    .nav{
+        display: none;
+    }
 }
