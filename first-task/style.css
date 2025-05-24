@@ -48,11 +48,15 @@ footer{
     background-color:#6b3c21;
 }
 
-.nav{
+.header-container{
     display: flex;
     justify-content: flex-end;
     align-items: center;
     color:#d7d0bf;
+}
+
+.nav{
+    display: flex;
 }
 
 .nav-link{
@@ -77,9 +81,7 @@ a.nav-link::after {
 
 .nav-link:hover::after {
   opacity: 1;
-  animation-name: slidein;
-  animation-duration: 0.8s;
-  animation-fill-mode: forwards;
+  animation: slidein 0.8s forwards;
 }
 
 @keyframes slidein {
@@ -92,12 +94,20 @@ a.nav-link::after {
 }
 
 .list-toggle{
-    display: flex;
-    flex-direction:column;
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-right: 0px;
+    padding: 5px;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
 }
 
-.collapsed{
-
+.list-toggle div{
+    background-color: #d7d0bf;
+    width: 100%;
+    height: 13%;
 }
 
 .profile-logo{
@@ -185,6 +195,28 @@ div.profile-title *{
     position: relative;
 }
 
+.section-item span{
+    color: #6b3c21;
+}
+
+.section-item a{
+    color: #6b3c21;
+    text-decoration: none;
+}
+
+.section-item a:hover{
+    animation: section-pick 0.5s forwards;
+}
+
+@keyframes section-pick{
+    from{
+        color: #6b3c21;
+    }
+    to{
+        color: #c77e3a;
+    }
+}
+
 .section-item::before{
     content: "";
     position: absolute;
@@ -225,6 +257,7 @@ div.profile-title *{
     main{
         padding: 0% 20px;
     }
+
     #profile{
         flex-direction: column;
         padding: 2px;
@@ -232,9 +265,7 @@ div.profile-title *{
         margin-bottom: 10px;
         padding-bottom: 15px;
     }
-    #education{
-        border-bottom: #9a9eaf solid 1px;
-    }
+
     .main-section{
         padding-top: 0px;
     }
@@ -244,7 +275,16 @@ div.profile-title *{
     .nav{
         display: none;
     }
+
+    .list-toggle{
+        display: flex;
+    }
+
     .section-container{
         width: 100%;
+    }
+    
+    #education{
+        border-bottom: #9a9eaf solid 1px;
     }
 }

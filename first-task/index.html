@@ -8,18 +8,20 @@
 </head>
 <body>
     <header class="container">
-        <nav class="nav">
-            <a class="nav-link" href="#contacts">Contacts</a> 
-            <a class="nav-link" href="#about">About</a> 
-            <a class="nav-link" href="#skills">Skills</a> 
-            <a class="nav-link" href="#education">Education</a>
-            <a class="nav-link" href="#courses">Courses</a>
-            <a class="nav-link" href="#english">English</a>
-        </nav>
-        <div class="list-toggle collapsed">
-            <div class="line1"></div>
-            <div class="line1"></div>
-            <div class="line1"></div>
+        <div class="header-container">
+            <nav class="nav">
+                <a class="nav-link" href="#contacts">Contacts</a> 
+                <a class="nav-link" href="#about">About</a> 
+                <a class="nav-link" href="#skills">Skills</a> 
+                <a class="nav-link" href="#education">Education</a>
+                <a class="nav-link" href="#courses">Courses</a>
+                <a class="nav-link" href="#english">English</a>
+            </nav>
+            <a class="list-toggle collapsed" href="#contacts"> /**switch to div later**/
+                <div class="line1"></div>
+                <div class="line1"></div>
+                <div class="line1"></div>
+            </a>
         </div>
     </header>
     <main class="container">
@@ -39,10 +41,10 @@
                 <h2>contacts</h2>
                 <ul class="section-list contacts-list">
                     <li class="section-item">Minsk, Belarus</li>
-                    <li class="section-item">Email</li>
-                    <li class="section-item">Github</li>
-                    <li class="section-item">Telegram</li>
-                    <li class="section-item">Discord</li>
+                    <li class="section-item">Email: <a href="" title="email">bla-lba-bla</a></li>
+                    <li class="section-item">Github: <a href="" title="github">drainmymane</a></li>
+                    <li class="section-item">Telegram: <a href="" title="telegram">@blablabla</a></li>
+                    <li class="section-item">Discord: <a href="" title="discord">blabla#1111</a></li>
                 </ul>
             </section>
             <section id="about" class="section-container">
@@ -54,17 +56,17 @@
             <section id="skills" class="section-container">
                 <h2>skills</h2>
                 <ul class="section-list">
-                    <li class="section-item">Web: HTML5, CSS3, JS</li>
-                    <li class="section-item">Version control: Git, Github</li>
-                    <li class="section-item">Graphics: Figma</li>
+                    <li class="section-item">Web:<span> HTML5, CSS3, JS</span></li>
+                    <li class="section-item">Version control: <span>Git, Github</span></li>
+                    <li class="section-item">Graphics: <span>Figma</span></li>
                 </ul>
             </section>
             <section id="courses" class="section-container">
                 <h2>courses</h2>
                 <ul class="section-list">
-                    <li class="section-item">Hexlet - HTML basic course</li>
-                    <li class="section-item">Hexlet - CSS basic course</li>
-                    <li class="section-item">RS School. JS/Frontend course. Stage 0</li>
+                    <li class="section-item">Hexlet - <span>HTML basic course</span></li>
+                    <li class="section-item">Hexlet - <span>CSS basic course</span></li>
+                    <li class="section-item">RS School - <span>JS/Frontend course. Stage 0</span></li>
                 </ul>
             </section>
             <section id="education" class="section-container">
