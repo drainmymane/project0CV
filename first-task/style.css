@@ -177,8 +177,42 @@ div.profile-title *{
     font-family: 'Times New Roman', Times, serif;
 }
 
-.contacts-item::before{
+.section-list{
+    list-style: none;
+}
+
+.section-item{
+    position: relative;
+}
+
+.section-item::before{
     content: "";
+    position: absolute;
+    top: 3px;
+    left: -40px;
+    width: 24px;
+    height: 24px;
+    background-size: contain;
+}
+/**town**/
+.contacts-item:nth-child(1){
+    background-image: url("/assets/town.svg");
+}
+/**email**/
+.contacts-item:nth-child(2){
+    background-image: url("/assets/mail.svg");
+}
+/**Github**/
+.contacts-item:nth-child(3){
+    background-image: url("/assets/github.svg");
+}
+/**Telegram**/
+.contacts-item:nth-child(4){
+    background-image: url("/assets/telegram.svg");
+}
+/**Discord**/
+.contacts-item:nth-child(5){
+    background-image: url("/assets/discord-logo.svg");
 }
 
 #education,
@@ -208,5 +242,8 @@ div.profile-title *{
 @media (max-width: 760px) {
     .nav{
         display: none;
+    }
+    .section-container{
+        width: 100%;
     }
 }
