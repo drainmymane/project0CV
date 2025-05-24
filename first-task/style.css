@@ -94,7 +94,6 @@ a.nav-link::after {
 .profile-logo{
     width: 200px;
     height: 200px;
-
     object-fit: cover;
 
     border-radius: 50%;
@@ -119,6 +118,7 @@ a.nav-link::after {
 .profile-title{
     display: flex;
     flex-direction: column;
+    padding: 5px;
 }
 
 .profile-title h1{
@@ -179,10 +179,17 @@ div.profile-title *{
     border-bottom: 0;
 }
 
-@media (max-width: 850px) {
-
+@media (max-width: 814px) {
+    #profile{
+        flex-wrap: wrap;
+        padding: 2px;
+        margin-bottom: 10px;
+    }
+    .main-section{
+        padding-top: 0px;
+    }
 }
 
-@media (max-width: 750px) {
-
+@media (max-width: 710px) {
+    
 }
