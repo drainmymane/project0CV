@@ -156,9 +156,44 @@ div.profile-title *{
 }
 
 .section-container{
+    position: relative;
     width: 42%;
     margin: 10px 5px;
     border-bottom: #9a9eaf solid 1px;
+}
+
+#contacts>ul {
+  list-style-type: none;
+}
+
+#contacts ul i {
+    position: absolute;
+    align-self: center;
+    left: 0px;
+    height: 22px;
+    width: 22px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#home{
+    background-image: url(/project0CV/assets/home.png);
+}
+
+#email{
+    background-image: url(/project0CV/assets/envelope.png);
+}
+
+#github{
+    background-image: url(/project0CV/assets/github-sign.png);
+}
+
+#telegram{
+    background-image: url(/project0CV/assets/telegram.png);
+}
+
+#phone{
+    background-image: url(/project0CV/assets/telephone-handle-silhouette.png);
 }
 
 .section-container h2{
