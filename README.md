@@ -1,1 +1,1 @@
-[My CV](./first-task/index.html)
+[My CV](/first-task/index.html)
